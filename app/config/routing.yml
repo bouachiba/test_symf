@@ -1,0 +1,8 @@
+fos_user:
+    resource: "@FOSUserBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

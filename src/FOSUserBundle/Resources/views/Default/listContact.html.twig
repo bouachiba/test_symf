@@ -1,0 +1,25 @@
+{% extends "::base.html.twig" %}
+{% block body %}
+    
+    <table border="1">
+        <tr>
+            <th>ID</th> 
+            <th>Email</th>
+            <th>Adresse</th>
+            <th>siteWeb</th>
+            <th>Telephone</th>
+            
+        </tr>
+        {{% for  cont in contact %}}
+        <tr>
+            <td>{{cont.id}}</td>
+            <td>{{cont.email}}</td>
+            <td>{{cont.adresse}}</td>
+            <td>{{cont.siteWeb}}</td>
+            <td>{{cont.telephone}}</td>
+            
+        </tr>
+       
+    </table>
+{% endblock %}
+
